@@ -98,7 +98,7 @@ const OrderStep: React.FC<Props> = ({
         {
           amount: 2000,
           payment_method: selectedCard,
-          return_url: "https://dominos-clone-app.vercel.app/tracker",
+          return_url: "https://www.dominos.valeriyanev.com/tracker",
           customer: customerID,
         },
         { headers: { Authorization: `Bearer ${token}` } }
@@ -107,7 +107,7 @@ const OrderStep: React.FC<Props> = ({
       setClientSecret(response.data.paymentIntent.client_secret);
 
       if (response.data.paymentIntent.status === "succeeded") {
-        window.location.href = "https://dominos-clone-app.vercel.app/tracker";
+        window.location.href = "https://www.dominos.valeriyanev.com/tracker";
       }
     } catch (err) {
       if (axios.isAxiosError(err)) {

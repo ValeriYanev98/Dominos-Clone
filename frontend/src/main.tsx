@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Auth0Provider
         domain="valeri.eu.auth0.com"
         clientId="jtVXRSEFdnDePdSgvnLmOmPEXJjGPMMN"
-        authorizationParams={{ redirect_uri: "https://dominos-clone-app.vercel.app/" }}
+        authorizationParams={{ redirect_uri: "https://www.dominos.valeriyanev.com/" }}
       >
         <ModalContextProvider>
           <LoginContextProvider>
