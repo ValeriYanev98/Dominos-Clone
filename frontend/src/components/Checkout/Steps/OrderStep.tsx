@@ -91,7 +91,6 @@ const OrderStep: React.FC<Props> = ({
     setItemsInBasket(newItemsInBasket);
   };
 
-  //test commend
   const handlePayWithSelectedCard = async () => {
     try {
       const response = await axios.post(
