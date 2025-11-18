@@ -101,9 +101,11 @@ const AddAddressComponent: React.FC = () => {
           placeholder="ex: ulitsa dunav 6, sofia"
           value={selectedSuggestedAddress ? selectedSuggestedAddress : fullAddress}
           onChange={(e) => {
-            getSuggestion(e.target.value);
-            setFullAddress(e.target.value);
-            setSelectedSuggestedAddress("");
+            if (e.target.value.length > 1) {
+              getSuggestion(e.target.value);
+              setFullAddress(e.target.value);
+              setSelectedSuggestedAddress("");
+            }
           }}
         />
 
