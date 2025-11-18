@@ -9,7 +9,7 @@ const useGetSuggestion = () => {
     try {
       const response = await axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${inputValue}.json`, {
         params: {
-          access_token: "pk.eyJ1IjoidmFsZXJpZGV2IiwiYSI6ImNsdmt2cHp0OTI2NGwyanA2ZzAwZ2wyd3UifQ.zLfzF0FydSNScvU6xLtN9A",
+          access_token: "pk.eyJ1IjoidmFsZXJpZGV2IiwiYSI6ImNtaTRjazc5eDFrcW4yaXNmN3N3YjlhMmUifQ.9IqMrwAKHBmNjPgFhz6oHQ",
           types: "address,poi",
           autocomplete: true,
           country: "BG",
