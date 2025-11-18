@@ -103,9 +103,9 @@ const AddAddressComponent: React.FC = () => {
           onChange={(e) => {
             if (e.target.value.length > 1) {
               getSuggestion(e.target.value);
-              setFullAddress(e.target.value);
-              setSelectedSuggestedAddress("");
             }
+            setFullAddress(e.target.value);
+            setSelectedSuggestedAddress("");
           }}
         />
 
