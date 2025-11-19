@@ -15,6 +15,8 @@ const useGetSuggestion = () => {
           country: "BG",
         },
       });
+
+      console.log(response);
       setSuggestedAddresses(response.data.features);
     } catch (err) {
       console.log(err);
