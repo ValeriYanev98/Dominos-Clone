@@ -13,6 +13,7 @@ const useGetSuggestion = () => {
           types: "address,poi",
           autocomplete: true,
           country: "BG",
+          language: "en",
         },
       });
 
